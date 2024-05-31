@@ -99,10 +99,9 @@ header nav ul{
 #s1 img{
     grid-column-start: -3;
     grid-column-end: -1;
-    width: 93%;
+    width: 100%;
     height: 380px;
-    padding: 0px 50px 0px 50px;
-    border-radius: 4%;
+    border-radius: 10px;
 }
 #s1 h1{
     text-align: start;
@@ -121,12 +120,14 @@ header nav ul{
     flex-direction: column;
     text-align: center;
     align-items: center;
+    max-width: 1200px;
 }
 #s2 >div{
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: start;
+    gap: 30px;
 }
 #s2 h2{
     position: relative;
@@ -146,9 +147,7 @@ header nav ul{
     font-family: var(--prata);
 }
 #s2 div article{
-    width: 75%;
     box-shadow: 10px 10px 20px var(--gris2);
-    padding: 20px;
     border-radius: 20px;
 }
 #s2 div article:hover{
@@ -275,24 +274,24 @@ footer p, footer ul li a{
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 750px;
     }
     #s2 h2::before{
         bottom: 104%;
         left: 42%;
     }
     #s2 > div{
-        max-width: 900px;
         grid-template-columns: 1fr 1fr;
-        -ms-grid-column-align: center;
         gap: 30px;
     }
     #s2 > div > article{
         width: 100%;
     }
-    #s2 > div > article:nth-child(3){
-        grid-column: -3/-1;
+    #s2 > div > a:nth-child(3){
+        grid-column-start: -3;
+        grid-column-end: -1;
     }
-    #s2 > div > article:nth-child(3) > img{
+    #s2 > div > a:nth-child(3) > article > img{
         height: 300px;
     }
     /* Section 3 */
@@ -320,7 +319,7 @@ footer p, footer ul li a{
     #s1 {
         grid-template-columns: 1fr;
         text-align: center;
-        max-width: 700px;
+        max-width: 650px;
     }
     #s1 h1, #s1 p{
         width: 90%;
@@ -331,12 +330,12 @@ footer p, footer ul li a{
     }
     #s1 img {
         grid-column: 1;
-        padding: 0px 20px;
     }
     #s2{
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 600px;
     }
     #s2 div{
         display: flex;

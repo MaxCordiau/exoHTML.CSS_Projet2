@@ -147,9 +147,12 @@ header nav ul{
 }
 #s2 div article{
     width: 75%;
-    background-color: var(--gris2);
+    box-shadow: 10px 10px 20px var(--gris2);
     padding: 20px;
     border-radius: 20px;
+}
+#s2 div article:hover{
+    transform: scale(1.05); 
 }
 #s2 div article img{
     width: 100%;
@@ -274,8 +277,8 @@ footer p, footer ul li a{
         align-items: center;
     }
     #s2 h2::before{
-        bottom: 35px;
-        left: 450px;
+        bottom: 104%;
+        left: 42%;
     }
     #s2 > div{
         max-width: 900px;
@@ -294,8 +297,8 @@ footer p, footer ul li a{
     }
     /* Section 3 */
     #s3 h2::before{
-        bottom: -1065px;
-        left: 150px;
+        bottom: 100%;
+        left: 0%;
     }
     #s3 >div {
         grid-template-columns: 1fr;
@@ -344,8 +347,8 @@ footer p, footer ul li a{
         margin-bottom: 20px;
     }
     #s2 h2::before {
-        bottom: 115px;
-        left: 320px;
+        bottom: 104%;
+        left: 42%;
     }
     /* Section 3 */
     #s3{
@@ -355,7 +358,7 @@ footer p, footer ul li a{
         grid-template-columns: 1fr;
     }
     #s3 h2::before {
-        bottom: -1615px;
-        left: 50px;
+        bottom: 100%;
+        left: 0%;
     }
 }
